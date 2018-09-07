@@ -34,5 +34,6 @@
 	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-webmvc-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-webmvc-portlet-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-websocket-4.3.7.RELEASE.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SpringRemoteContract"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

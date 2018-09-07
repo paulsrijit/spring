@@ -9,14 +9,15 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean name="springRemoteClient-TestRemoteClient"
-		class="springremote.client.service.TestRemoteClientService">
-
+		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
+		p:serviceUrl-ref="http://localhost/SpringRemoteService/TestRemoteService.rpc"
+		p:serviceInterface="springremote.client.contract.TestRemoteClient">
 	</bean>
 	
-	<bean name="/SpringRemoteClient.rpc"
+	<!-- <bean name="/SpringRemoteClient.rpc"
 		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
 		p:service-ref="springremote.client.service.TestRemoteClientService"
 		p:serviceInterface="springremote.client.contract.TestRemoteClient">
-	</bean>
+	</bean> -->
 
 </beans>
