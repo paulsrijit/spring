@@ -3,6 +3,7 @@
 	<name>SpringRemoteClient</name>
 	<comment></comment>
 	<projects>
+		<project>SpringRemoteContract</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

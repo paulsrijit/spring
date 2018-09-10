@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop
+    	http://www.springframework.org/schema/aop/spring-aop.xsd
+	  	http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- <bean name="springRemoteClient-TestRemoteClient"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
+		p:serviceUrl-ref="http://localhost/SpringRemoteService/TestRemoteService.rpc"
+		p:serviceInterface="springremote.client.contract.TestRemoteClient">
+	</bean> -->
+	
+	<bean id="springRemoteClient-TestRemoteClient"
+         class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+      <property name="serviceUrl">
+         <value>http://localhost:8080/SpringRemoteService/TestRemoteService.rpc</value>
+      </property>
+      <property name="serviceInterface">
+         <value>springremote.client.contract.TestRemoteClient</value>
+      </property>
+   </bean>
+	
+	<!-- <bean name="springRemoteClient-TestRemoteClient"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+		<property name="serviceUrl">
+			<value>http://localhost/SpringRemoteService/TestRemoteService.rpc</value>
+		</property>
+		<property name="serviceInterface">
+			<value>springremote.client.contract.TestRemoteClient</value>
+		</property>
+	</bean> -->
+	
+	<!-- <bean name="/SpringRemoteClient.rpc"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
+		p:service-ref="springremote.client.service.TestRemoteClientService"
+		p:serviceInterface="springremote.client.contract.TestRemoteClient">
+	</bean> -->
+
+</beans>

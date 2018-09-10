@@ -13,27 +13,11 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-thirdpartylibrary"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-aop-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-aspects-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-beans-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-context-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-context-support-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-core-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-expression-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-instrument-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-instrument-tomcat-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-jdbc-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-jms-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-messaging-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-orm-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-oxm-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-test-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-tx-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-web-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-webmvc-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-webmvc-portlet-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring/thirdpartylibrary/binary/spring-websocket-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-thirdpartylibrary">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/SpringRemoteContract"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
