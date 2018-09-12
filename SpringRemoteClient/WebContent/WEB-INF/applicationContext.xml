@@ -8,6 +8,8 @@
 	  	http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<bean id="applicationContextProvder"
+                        class="springremote.context.ApplicationContextProvider"/>
 
 	<!-- <bean name="springRemoteClient-TestRemoteClient"
 		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
@@ -24,6 +26,13 @@
          <value>springremote.client.contract.TestRemoteClient</value>
       </property>
    </bean>
+   
+   <!-- <bean id="test-bean"
+         class="springremote.test.TestBean">
+      <property name = "val">
+      	<value>Hello World</value>
+      </property>
+   </bean> -->
 	
 	<!-- <bean name="springRemoteClient-TestRemoteClient"
 		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
