@@ -1,6 +1,12 @@
 package springremote.client.dto;
 
-public class TestRequestDto {
+import java.io.Serializable;
+
+public class TestRequestDto implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8093119057277898532L;
 	private String requestString;
 
 	public String getRequestString() {

@@ -11,43 +11,14 @@
 <bean id="applicationContextProvder"
                         class="springremote.context.ApplicationContextProvider"/>
 
-	<!-- <bean name="springRemoteClient-TestRemoteClient"
-		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
-		p:serviceUrl-ref="http://localhost/SpringRemoteService/TestRemoteService.rpc"
-		p:serviceInterface="springremote.client.contract.TestRemoteClient">
-	</bean> -->
-	
 	<bean id="springRemoteClient-TestRemoteClient"
          class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
       <property name="serviceUrl">
-         <value>http://localhost:8080/SpringRemoteService/TestRemoteService.rpc</value>
+         <value>http://localhost:8080/SpringRemoteServiceWeb/TestRemoteService.rpc</value>
       </property>
       <property name="serviceInterface">
          <value>springremote.client.contract.TestRemoteClient</value>
       </property>
    </bean>
-   
-   <!-- <bean id="test-bean"
-         class="springremote.test.TestBean">
-      <property name = "val">
-      	<value>Hello World</value>
-      </property>
-   </bean> -->
-	
-	<!-- <bean name="springRemoteClient-TestRemoteClient"
-		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
-		<property name="serviceUrl">
-			<value>http://localhost/SpringRemoteService/TestRemoteService.rpc</value>
-		</property>
-		<property name="serviceInterface">
-			<value>springremote.client.contract.TestRemoteClient</value>
-		</property>
-	</bean> -->
-	
-	<!-- <bean name="/SpringRemoteClient.rpc"
-		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"
-		p:service-ref="springremote.client.service.TestRemoteClientService"
-		p:serviceInterface="springremote.client.contract.TestRemoteClient">
-	</bean> -->
 
 </beans>
