@@ -1,12 +1,10 @@
-package hello.resource.controller;
+package hello;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import hello.resource.representation.Greeting;
 
 @RestController
 public class GreetingController {
@@ -18,5 +16,6 @@ public class GreetingController {
 	public Greeting restMeth1(@RequestParam(value="name", defaultValue="World") String nm) {
 		System.out.println("hello.resource.controller.GreetingController.restMeth1(String)::CALLED");
 		return new Greeting(id.incrementAndGet(), String.format(TEMPLATE, nm));
+		//return new Greeting(id.incrementAndGet());
 	}
 }
