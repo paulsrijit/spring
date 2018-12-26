@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class ApplicationContextProvider implements ApplicationContextAware {
+public class ApplicationContextProvider implements ApplicationContextAware { //testing new repo in win 7
 
 	private static ApplicationContext context;
 
