@@ -4,52 +4,34 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<!--
 	<bean id="triangle"
-		class="spring.practice.javabrains.videotutorial10.Triangle"
+		class="spring.practice.javabrains.videotutorial14.Triangle" scope="prototype"
 		autowire="byName">
 	</bean>
 
 	<bean id="pointA"
-		class="spring.practice.javabrains.videotutorial10.Point">
+		class="spring.practice.javabrains.videotutorial14.Point">
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
 
 	<bean id="pointB"
-		class="spring.practice.javabrains.videotutorial10.Point">
+		class="spring.practice.javabrains.videotutorial14.Point">
 		<property name="x" value="-20" />
 		<property name="y" value="0" />
 	</bean>
 
 	<bean id="pointC"
-		class="spring.practice.javabrains.videotutorial10.Point">
+		class="spring.practice.javabrains.videotutorial14.Point">
 		<property name="x" value="20" />
 		<property name="y" value="0" />
 	</bean>
-	-->
-
-	<!-- 
-	<bean id="circle"
-		class="spring.practice.javabrains.videotutorial10.Circle"
-		autowire="byType">
-	</bean> 
-	-->
 	
-	<bean id="circle"
-		class="spring.practice.javabrains.videotutorial10.Circle"
-		autowire="constructor">
-	</bean>
-
-	<bean id="centre_1"
-		class="spring.practice.javabrains.videotutorial10.Point">
+	<bean id="centre"
+		class="spring.practice.javabrains.videotutorial14.Point">
 		<property name="x" value="10" />
 		<property name="y" value="20" />
 	</bean>
 	
-	<bean id="area_1"
-		class="spring.practice.javabrains.videotutorial10.Area">
-		<property name="area" value="200" />
-	</bean>
 
 </beans>
