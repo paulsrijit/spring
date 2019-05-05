@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="triangle"
+		class="spring.practice.javabrains.videotutorial15.Triangle"
+		autowire="byName">
+	</bean>
+
+	<bean id="pointA"
+		class="spring.practice.javabrains.videotutorial15.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="pointB"
+		class="spring.practice.javabrains.videotutorial15.Point">
+		<property name="x" value="-20" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="pointC"
+		class="spring.practice.javabrains.videotutorial15.Point">
+		<property name="x" value="20" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<bean id="centre"
+		class="spring.practice.javabrains.videotutorial15.Point">
+		<property name="x" value="10" />
+		<property name="y" value="20" />
+	</bean>
+	
+	<bean class="spring.practice.javabrains.videotutorial15.DisplayNameBeanPostProcessor"/>
+
+</beans>
