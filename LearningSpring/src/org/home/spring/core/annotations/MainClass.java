@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-//		Student s1 = (Student) ctx.getBean("student");
+//		Student s1 = (Student) ctx.getBean("student"); //
 //		System.out.println(s1.getStudentName());
 		
 //		Student s2 = (Student) ctx.getBean("my-student");
